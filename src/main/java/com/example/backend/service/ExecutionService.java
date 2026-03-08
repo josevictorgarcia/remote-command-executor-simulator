@@ -18,7 +18,10 @@ public class ExecutionService {
     public Execution createExecution(String command, int cpu) {
         Execution execution = new Execution(command, cpu);
         repository.save(execution);
-        executorManager.startExecutionAsync(execution);
+
+        // Ahora enviamos la ejecución a la cola real
+        executorManager.submitExecution(execution);
+
         return execution;
     }
 
