@@ -2,6 +2,12 @@
 
 This project provides a simple backend service that allows submitting shell commands for execution and tracking their status.
 
+---
+
+## Architecture: Asynchronous job queue with a single worker thread
+
+![Diagram](./diagram.drawio.svg)
+
 The service manages command executions with the following statuses:
 
 - `QUEUED`
