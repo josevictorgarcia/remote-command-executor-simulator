@@ -25,6 +25,15 @@ Once the application is running, it will be available at:
 http://localhost:8080
 ```
 
+## Running the Application with Docker
+
+To run the application using Docker, execute the following commands from the project root:
+
+```bash
+chmod +x ./run-docker.sh
+./run-docker.sh
+```
+
 ---
 
 ## API Usage

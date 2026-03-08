@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  remote-executor:
+    build: .
+    container_name: remote-executor
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
